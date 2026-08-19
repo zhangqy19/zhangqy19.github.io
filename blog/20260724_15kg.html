@@ -1,3 +1,141 @@
+<!DOCTYPE html>
+<!-- 1. 文档类型声明：告诉浏览器这是一个 HTML5 网页 -->
+<html lang="zh-CN">
+<head>
+    <!-- 2. 字符编码：确保中文和特殊符号正常显示 -->
+    <meta charset="UTF-8">
+    <!-- 3. 视口设置：让页面在手机上也能正常缩放显示 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 4. 页面标题：显示在浏览器标签页上的文字 -->
+    <title>Qiaoyin Zhang</title>
+
+    <!-- 5. 样式开始：所有页面外观都在这里定义 -->
+    <style>
+        /* 5a. 全局重置：消除浏览器默认的边距和间距 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 5b. 页面整体样式：背景色、字体、文字颜色、行高、内边距 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #fafaf8;   /* 暖白色背景 */
+            color: #1e1e1e;              /* 深灰色文字 */
+            line-height: 1.6;            /* 行高：让文字不拥挤 */
+            padding: 2rem 1rem;          /* 内边距：页面边缘留白 */
+        }
+
+        /* 5c. 内容容器：限定最大宽度，让内容居中，不会撑满整个屏幕 */
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* 5d. 头部区域：名字 + 简介 */
+        .header {
+            margin-bottom: 2.5rem;
+        }
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 0.3rem;
+        }
+        .header .subhead {
+            font-size: 1rem;
+            color: #555;
+            font-weight: 400;
+        }
+
+        /* 5e. 分隔线：用于视觉上分隔板块 */
+        hr {
+            border: none;
+            border-top: 1px solid #e6e6e6;
+            margin: 2rem 0;
+        }
+
+        /* 5f. 每个内容板块的样式 */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h2 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.3px;
+        }
+        .section p, .section li {
+            color: #2c2c2c;
+            font-size: 0.95rem;
+        }
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .section ul li {
+            margin-bottom: 0.3rem;
+        }
+        .section a {
+            color: #1e1e1e;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-color: #ccc;
+        }
+        .section a:hover {
+            text-decoration-color: #1e1e1e;
+        }
+
+        /* 5g. 兴趣标签的样式：小圆角标签 */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.3rem;
+        }
+        .tags span {
+            background: #ecebe8;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: #1e1e1e;
+        }
+
+        /* 5h. 作品链接：横向排列 */
+        .work-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 0.3rem;
+        }
+        .work-links a {
+            font-size: 0.95rem;
+        }
+
+        /* 5i. 页脚：版权信息，字号小，颜色浅 */
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid #e6e6e6;
+            padding-top: 1.5rem;
+            text-align: center;
+        }
+
+        /* 5j. 手机端适配：屏幕小于480px时调小字号和内边距 */
+        @media (max-width: 480px) {
+            body {
+                padding: 1.5rem 1rem;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
 <div class="section">
   <h2>68kg→53kg 减重15kg!!!</h2>
 
@@ -84,3 +222,9 @@
 <div class="footer">
             © 2026 Qiaoyin Zhang
 </div>
+
+
+    </div>
+    <!-- 15. 内容容器结束 -->
+</body>
+</html>
